@@ -1,0 +1,65 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Node dependencies
+node_modules/
+
+# Frontend build files
+dist/
+build/
+.next/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files and uploads
+temp/
+tmp/
+uploads/
+test_samples/
+
+# Generated reports
+reports/generated/
+
+# Local databases
+*.sqlite3
+*.db
+
+# Training datasets and intermediate outputs
+training/processed/
+training/datasets/
+
+# Local MongoDB database
+data/db/
+
+# Generated scan reports
+reports/
+
+# IMPORTANT:
+# Do not ignore *.joblib, *.pkl, *.json model metadata,
+# or backend ML artifacts required for predictions.

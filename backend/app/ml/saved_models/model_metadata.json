@@ -1,0 +1,131 @@
+{
+  "active_model": "Random_Forest",
+  "active_model_file": "active_binary_model.joblib",
+  "version": "1.0.0",
+  "dataset_name": "ClaMP Integrated PE Dataset & DA-Proj Malware Families",
+  "training_records": 5207,
+  "num_features": 69,
+  "training_date": "2026-10-31 14:03:44",
+  "models_comparison": {
+    "Logistic_Regression": {
+      "model_name": "Logistic_Regression",
+      "accuracy": 0.9616,
+      "precision": 0.9667,
+      "recall": 0.9596,
+      "f1_score": 0.9631,
+      "roc_auc": 0.9907,
+      "cv_mean_accuracy": 0.9594,
+      "false_positive_rate": 0.0361,
+      "false_negative_rate": 0.0404,
+      "confusion_matrix": {
+        "tn": 480,
+        "fp": 18,
+        "fn": 22,
+        "tp": 522,
+        "matrix": [
+          [
+            480,
+            18
+          ],
+          [
+            22,
+            522
+          ]
+        ]
+      },
+      "training_time_seconds": 0.025
+    },
+    "Decision_Tree": {
+      "model_name": "Decision_Tree",
+      "accuracy": 0.9693,
+      "precision": 0.9655,
+      "recall": 0.9761,
+      "f1_score": 0.9707,
+      "roc_auc": 0.9725,
+      "cv_mean_accuracy": 0.9745,
+      "false_positive_rate": 0.0382,
+      "false_negative_rate": 0.0239,
+      "confusion_matrix": {
+        "tn": 479,
+        "fp": 19,
+        "fn": 13,
+        "tp": 531,
+        "matrix": [
+          [
+            479,
+            19
+          ],
+          [
+            13,
+            531
+          ]
+        ]
+      },
+      "training_time_seconds": 0.024
+    },
+    "Random_Forest": {
+      "model_name": "Random_Forest",
+      "accuracy": 0.9894,
+      "precision": 0.989,
+      "recall": 0.9908,
+      "f1_score": 0.9899,
+      "roc_auc": 0.9992,
+      "cv_mean_accuracy": 0.9899,
+      "false_positive_rate": 0.012,
+      "false_negative_rate": 0.0092,
+      "confusion_matrix": {
+        "tn": 492,
+        "fp": 6,
+        "fn": 5,
+        "tp": 539,
+        "matrix": [
+          [
+            492,
+            6
+          ],
+          [
+            5,
+            539
+          ]
+        ]
+      },
+      "training_time_seconds": 0.127
+    },
+    "Support_Vector_Machine": {
+      "model_name": "Support_Vector_Machine",
+      "accuracy": 0.9626,
+      "precision": 0.9583,
+      "recall": 0.9706,
+      "f1_score": 0.9644,
+      "roc_auc": 0.994,
+      "cv_mean_accuracy": 0.964,
+      "false_positive_rate": 0.0462,
+      "false_negative_rate": 0.0294,
+      "confusion_matrix": {
+        "tn": 475,
+        "fp": 23,
+        "fn": 16,
+        "tp": 528,
+        "matrix": [
+          [
+            475,
+            23
+          ],
+          [
+            16,
+            528
+          ]
+        ]
+      },
+      "training_time_seconds": 0.512
+    }
+  },
+  "multiclass_metrics": {
+    "model_name": "Random_Forest_Multiclass",
+    "accuracy": 0.307,
+    "precision": 0.268,
+    "recall": 0.307,
+    "f1_score": 0.2787,
+    "test_samples": 3055
+  }
+}
